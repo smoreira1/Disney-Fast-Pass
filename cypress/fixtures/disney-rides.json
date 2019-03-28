@@ -1,0 +1,30 @@
+{
+    "hollywood": {
+        "rides": [
+            {"name": "tower-of-terror"},
+            {"name": "slinky"},
+            {"name": "rocking-roller-coaster"}
+        ]
+    },
+    "magic-kingdom": {
+        "rides": [
+            {"name": "thunder-mountain"},
+            {"name": "space-mountain"},
+            {"name": "seven-mine-train"}
+        ]
+    },
+    "animal-kingdom": {
+        "rides": [
+            {"name": "avatar-flight"},
+            {"name": "dinosaur"},
+            {"name": "E-Moutain"}
+        ]
+    },
+    "epcot": {
+        "rides": [
+            {"name": "soaring"},
+            {"name": "frozen"},
+            {"name": "test-track"}
+        ]
+    }
+  }
