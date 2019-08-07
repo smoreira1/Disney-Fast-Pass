@@ -9,9 +9,16 @@ describe('Disney Fast Pass Bot', () => {
         cy.visit('https://disneyworld.disney.go.com/login/');
 
         cy.get('#loginPageUsername').type('smoreira1@live.com'); // Type 'Hello, World' into the 'input'
-       // cy.get('#loginPagePassword').type(''); // Type 'Hello, World' into the 'input'
+        cy.get('#loginPagePassword').type(''); // Type 'Hello, World' into the 'input'
         cy.get('#loginPageSubmitButton').click();
         cy.visit('https://disneyworld.disney.go.com/fastpass-plus/select-party/');
+        cy.contains('Ruby').click()
+        cy.get('#selectPartyPage > div:nth-child(5) > div > div:nth-child(2) > div').click()
+        cy.get('#selectParkAndDate > div.calendarContainer > div > div.container.ng-scope > div > div > div.dates > div:nth-child(5) > span:nth-child(6)').click()
+        cy.get('#selectParkContainer > div.parkList > div:nth-child(2)').click()
+        cy.contains('4:15 PM').click()
+        cy.contains('Confirm').click()
+
         // let guestUsers = document.querySelector('.firstName guestSensitive');
         // function partyPerson(firstName) {
         //     return firstName === 'Ruby';
